@@ -2,7 +2,8 @@ import React from 'react'
 import './ExploreMenu.css'
 import { menu_list } from '../../assets/assets'
 // In out asset.jsx file inside assets folder we have already created a menulist array....in it we have multiple objects with menu name and its image 
-const ExploreMenu = () => {
+//this category and setcategory we have initialized in our Home.jsx file and created a state variable there
+const ExploreMenu = ({category, setcategory}) => {
   return (
     <div className='explore-menu' id='explore-menu'>
         <h1>Explore our Menu</h1>
@@ -19,6 +20,7 @@ const ExploreMenu = () => {
                  )
             })}
         </div>
+        <hr />
     </div>
   )
 }
